@@ -1,17 +1,27 @@
-body, html, .home {
+body, html, .web-view {
     font-family: 'Titillium Web', sans-serif;
     height: 100%;
+    width: 100%;
     margin: 0;
+    overflow: hidden;
+}
+.web-view {
+    display: flex;
+    position: absolute;
+    justify-content: center;
 }
 
 #particles-js {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: absolute;
 }
+
 
 .home {
     width: 100%;
+    height: 100%;
     display: flex;
     position: absolute;
     align-items: center;
@@ -46,4 +56,29 @@ body, html, .home {
 
 .title-page p {
     margin: 0;
+}
+
+.wrapper{
+    
+    height: 100%;
+    
+    width: 600px;
+    transform: translate(0, 100%);
+    transition: transform .5s;
+}
+
+/* -- About Page -- */
+.about {
+    background-color: white;
+    height: 100%;
+    
+    
+}
+
+
+
+.bringToView {
+    transform: translate(0, 0%);
+    background-color: white;
+    overflow: scroll;
 }
