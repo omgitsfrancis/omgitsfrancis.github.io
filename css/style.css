@@ -59,25 +59,41 @@ body, html, .web-view {
 }
 
 .wrapper{
-    
     height: 100%;
-    
-    width: 600px;
+    width: 700px;
     transform: translate(0, 100%);
-    transition: transform .5s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    -webkit-transition: transform 1s;
+    transition: all .5s;
 }
-
-/* -- About Page -- */
-.about {
-    background-color: white;
-    height: 100%;
-    
-    
-}
-
-
-.bringToView {
-    transform: translate(0, 0%);
+.wrapper.bringToView {
+    transform: translate(0, 0);
     background-color: white;
     overflow: auto;
+}
+.wrapper h1 {
+    text-align: center;
+}
+/* -- About Page -- */
+.about {
+    display: none;
+}
+.projects {
+    display: none;
+}
+.contact {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.active {
+    display: inline;
 }
