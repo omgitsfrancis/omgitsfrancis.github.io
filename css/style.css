@@ -79,5 +79,5 @@ body, html, .web-view {
 .bringToView {
     transform: translate(0, 0%);
     background-color: white;
-    overflow: scroll;
+    overflow: auto;
 }
