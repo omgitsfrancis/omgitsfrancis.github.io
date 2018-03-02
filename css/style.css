@@ -4,7 +4,15 @@ body, html, .web-view {
     width: 100%;
     margin: 0;
     overflow: hidden;
+    font-size: 20px;
+    
 }
+/* Mobile first font sizes */
+p { font-size: 14px;}
+h1 { font-size: 3rem;}
+
+
+
 .web-view {
     display: flex;
     position: absolute;
@@ -49,7 +57,6 @@ body, html, .web-view {
 }
 
 .title-page h1 {
-    font-size: 54px;
     margin: 0;
     text-align: center;
 }
@@ -62,7 +69,8 @@ body, html, .web-view {
 /* Wrapper for pages */
 .wrapper{
     height: 100%;
-    width: 700px;
+    width: 100%;
+    padding: 20px;
     transform: translate(0, 100%);
     -moz-transition: transform 1s;
     -o-transition: transform 1s;
@@ -78,6 +86,7 @@ body, html, .web-view {
     text-align: center;
 }
 #close-button {
+    width: 100%;
     text-align: center;
     background-color: salmon;
     cursor: pointer;
@@ -99,4 +108,41 @@ body, html, .web-view {
 
 .active {
     display: inline;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .wrapper {
+        width: 100%;
+    }
+    h1 { font-size: 3rem; }
+    p { font-size: 20px; }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .wrapper {
+        width: 576px;
+    }
+    h1 { font-size: 4rem; }
+    p { font-size: 20px; }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .wrapper{
+        width: 768px;
+    }
+    h1 { font-size: 5rem; }
+    p { font-size: 20px; }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 992px;
+    }
+    h1 { font-size: 5rem; }
+    p { font-size: 20px; }
 }
