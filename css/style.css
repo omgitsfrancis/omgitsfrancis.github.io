@@ -51,6 +51,11 @@ h1 { font-size: 3rem;}
     cursor: pointer;
     margin: 5px;
 }
+.nav li:hover {
+    color: maroon;
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 .title-page {
     display: flex;
@@ -69,6 +74,18 @@ h1 { font-size: 3rem;}
 
 #headline {
     cursor: pointer;
+}
+.social-media {
+    margin: 20px;
+}
+.social-media a {
+    text-decoration: none;
+    margin: 10px;
+    color: inherit;
+}
+.social-media a:hover{
+    color: maroon;
+    ;
 }
 
 
@@ -94,8 +111,11 @@ h1 { font-size: 3rem;}
 #close-button {
     width: 100%;
     text-align: center;
-    background-color: salmon;
+    background-color: grey;
     cursor: pointer;
+}
+#close-button:hover {
+    background-color: maroon;
 }
 
 /* -- About Page -- */

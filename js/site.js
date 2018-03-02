@@ -46,7 +46,6 @@ page.prototype.show = function() {
     console.log(this.isActive);
 };
 
-var home = new page('home');
 var about = new page('about');
 var projects = new page('projects');
 var contact = new page('contact');
@@ -55,9 +54,6 @@ var contact = new page('contact');
 
 
 
-home.navElement.onclick = function() {
-    document.querySelector('.nav').classList.toggle('test');
-}
 about.navElement.onclick = () => {
     wrapper.classList.add('bringToView');
     aboutPage.classList.add('active');
