@@ -67,6 +67,10 @@ h1 { font-size: 3rem;}
     margin: 0;
 }
 
+#headline {
+    cursor: pointer;
+}
+
 
 /* Wrapper for pages */
 .wrapper{

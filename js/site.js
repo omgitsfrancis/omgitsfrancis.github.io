@@ -9,7 +9,32 @@ var contactPage = document.querySelector('.contact');
 var wrapper = document.querySelector('.wrapper');
 var closeButton = document.querySelector('#close-button');
 
+var headline = document.getElementById('headline');
 
+var headliners = [
+    "an SDSU alumni.",
+    "a programmer.",
+    "a geek.",
+    "a tinker...er.",
+    "a technologist.",
+    "a web developer.",
+    "a lover of coffee.",
+    "a foodie.",
+    "a musician.",
+    "a San Diegan.",
+    "a 3D printing noob.",
+    "a car enthusiast.",
+];
+
+headline.onclick = function() {
+    (this.innerHTML === "Francis Enriquez.") ? this.innerHTML = headliners[Math.floor(Math.random()*headliners.length)] 
+        : this.innerHTML = "Francis Enriquez.";
+    
+    this.classList.add('flipInX', 'animated');
+    window.setTimeout(()=>{
+        headline.classList.remove('flipInX', 'animated');
+    },500);
+};
 
 var page = function(page) {
     this.page = page;
