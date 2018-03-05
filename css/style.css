@@ -111,7 +111,7 @@ h1 { font-size: 3rem;}
 #close-button {
     width: 100%;
     text-align: center;
-    background-color: grey;
+    background-color: #acacac;
     cursor: pointer;
 }
 #close-button:hover {
@@ -127,6 +127,32 @@ h1 { font-size: 3rem;}
 .projects {
     display: none;
 }
+.project {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
+.project img {
+    width: 300px;
+    margin: auto;
+}
+.project .project-info {
+    margin: auto;
+}
+
+.project .project-info h3 {
+    text-align: center;
+}
+.project .project-info .project-link {
+    text-align: center;
+    margin: 36px 0px;
+}
+
+
 /* -- Contact Page -- */
 .contact {
     display: none;
@@ -152,42 +178,40 @@ h1 { font-size: 3rem;}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .wrapper {
-        width: 100%;
-    }
+    .wrapper { width: 100%; }
     h1 { font-size: 3rem; }
     p { font-size: 20px; }
+    .project { flex-direction: row; }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .wrapper {
-        width: 576px;
-    }
+    .wrapper { width: 576px; }
     h1 { font-size: 4rem; }
     p { font-size: 20px; }
+    .project { flex-direction: row; }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .wrapper{
-        width: 768px;
-    }
-    .wrapper p {
-        margin: auto 75px;
-    }
+    .wrapper{ width: 768px; }
+    .wrapper p { margin: auto 75px; }
     h1 { font-size: 5rem; }
     p { font-size: 20px; }
+    .project { 
+        width: 90%;
+        flex-direction: row;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .wrapper {
-        width: 992px;
-    }
-    .wrapper p {
-        margin: auto 100px;
-    }
+    .wrapper { width: 992px; }
+    .wrapper p { margin: auto 100px; }
     h1 { font-size: 5rem; }
     p { font-size: 20px; }
+    .project { 
+        width: 90%;
+        flex-direction: row;
+    }
 }
