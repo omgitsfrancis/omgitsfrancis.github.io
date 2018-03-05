@@ -131,7 +131,14 @@ h1 { font-size: 3rem;}
 .contact {
     display: none;
 }
-
+.comment-form input, textarea{
+   width: 85%;
+}
+.comment-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .active {
     display: inline;
