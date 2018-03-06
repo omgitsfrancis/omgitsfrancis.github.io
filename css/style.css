@@ -9,7 +9,7 @@ body, html, .web-view {
 
 
 /* Mobile first font sizes */
-p { font-size: 14px;}
+p { font-size: 14px; margin: 5px;}
 h1 { font-size: 3rem;}
 
 
@@ -149,7 +149,21 @@ h1 { font-size: 3rem;}
 }
 .project .project-info .project-link {
     text-align: center;
-    margin: 36px 0px;
+    margin: 23px 0px;
+}
+.project ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+.project li {
+    margin: 5px;
+    padding: 0 5px;
+    background-color: green;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 
