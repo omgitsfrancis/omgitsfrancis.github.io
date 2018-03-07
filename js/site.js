@@ -68,9 +68,7 @@ contact.navElement.onclick = (clicked) => {
 /* click wrapper to exit */
 closeButton.addEventListener('click', ()=>{
     wrapper.classList.remove('bringToView');
-    document.querySelectorAll('.active').forEach((value)=>{
-        value.classList.remove('active');
-    });
+    document.querySelector('.active').classList.remove('active');
     //pJSDom[0].pJS.particles.size.value = 5;
     //pJSDom[0].pJS.particles.shape.type = "polygon";
     //pJSDom[0].pJS.fn.particlesRefresh();
