@@ -1,14 +1,6 @@
-var navAbout = document.querySelector("#nav-about");
-var navProjects = document.querySelector("#nav-projects");
-var navContact = document.querySelector("#nav-contact");
-
-var aboutPage = document.querySelector('.about');
-var projectsPage = document.querySelector('.projects');
-var contactPage = document.querySelector('.contact');
 
 var wrapper = document.querySelector('.wrapper');
 var closeButton = document.querySelector('#close-button');
-
 var headline = document.getElementById('headline');
 
 var headliners = [
@@ -34,6 +26,8 @@ headline.onclick = function() {
     window.setTimeout(()=>{
         headline.classList.remove('flipInX', 'animated');
     },500);
+
+
 };
 
 var page = function(page) {
@@ -53,33 +47,40 @@ var contact = new page('contact');
 
 
 
-
-about.navElement.onclick = () => {
+/* Assign click events */
+about.navElement.onclick = (clicked) => {
     wrapper.classList.add('bringToView');
-    aboutPage.classList.add('active');
-    console.log('test worked');
+    about.pageElement.classList.add('active');
+    //changeParticles(clicked.target.innerHTML);
 };
-navProjects.onclick = ()=>{
+projects.navElement.onclick = (clicked)=>{
     wrapper.classList.add('bringToView');
-    projectsPage.classList.add('active');
+    projects.pageElement.classList.add('active');
+    //changeParticles(clicked.target.innerHTML);
 };
-navContact.onclick = function() {
+contact.navElement.onclick = (clicked) => {
     wrapper.classList.add('bringToView');
-    contactPage.classList.add('active');
+    contact.pageElement.classList.add('active');
+    //changeParticles(clicked.target.innerHTML);
 };
 
 
 /* click wrapper to exit */
 closeButton.addEventListener('click', ()=>{
     wrapper.classList.remove('bringToView');
-    removeActive();
-});
-
-
-
-// Removes all instances of class 'active'
-function removeActive(){
     document.querySelectorAll('.active').forEach((value)=>{
         value.classList.remove('active');
     });
+    //pJSDom[0].pJS.particles.size.value = 5;
+    //pJSDom[0].pJS.particles.shape.type = "polygon";
+    //pJSDom[0].pJS.fn.particlesRefresh();
+});
+
+/* Changes particles of to the Selected menu */
+function changeParticles(page) {
+    page = page.toLowerCase();
+
+    pJSDom[0].pJS.particles.shape.type = "image";
+    pJSDom[0].pJS.particles.shape.image.src = "img/" + page +".png";
+    pJSDom[0].pJS.fn.particlesRefresh();
 }

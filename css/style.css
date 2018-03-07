@@ -49,13 +49,13 @@ h1 { font-size: 3rem;}
 .nav li {
     list-style-type: none;
     cursor: pointer;
-    margin: 5px;
+    padding: 5px;
 }
 .nav li:hover {
     color: white;
     background-color: maroon;
     font-weight: bold;
-    border-radius: 10px
+    border-radius: 5px;
 }
 
 .title-page {
@@ -113,6 +113,7 @@ h1 { font-size: 3rem;}
     text-align: center;
     background-color: #acacac;
     cursor: pointer;
+    border-radius: 5px;
 }
 #close-button:hover {
     background-color: maroon;
