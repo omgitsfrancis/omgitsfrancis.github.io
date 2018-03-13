@@ -24,7 +24,7 @@ h1 { font-size: 3rem;}
 #particles-js {
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     position: absolute;
 }
 
@@ -103,7 +103,7 @@ h1 { font-size: 3rem;}
 .wrapper.bringToView {
     transform: translate(0, 0);
     background-color: white;
-    overflow: auto;
+    overflow: scroll;
 }
 .wrapper h1 {
     text-align: center;
@@ -123,6 +123,10 @@ h1 { font-size: 3rem;}
 /* -- About Page -- */
 .about {
     display: none;
+}
+.about .spacer {
+    width: 100%;
+    height: 30px;
 }
 /* -- Projects Page -- */
 .projects {
@@ -210,7 +214,10 @@ h1 { font-size: 3rem;}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .wrapper{ width: 768px; }
-    .wrapper p { margin: auto 75px; }
+    .wrapper p {
+        margin: auto 75px;
+        padding: 10px 0;
+    }
     h1 { font-size: 5rem; }
     p { font-size: 20px; }
     .project { 
@@ -222,7 +229,10 @@ h1 { font-size: 3rem;}
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .wrapper { width: 992px; }
-    .wrapper p { margin: auto 100px; }
+    .wrapper p {
+        margin: auto 100px;
+        padding: 10px 0;
+    }
     h1 { font-size: 5rem; }
     p { font-size: 20px; }
     .project { 
